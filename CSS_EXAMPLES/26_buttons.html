@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Buttons</title>
+	
+	<style>
+		.button{
+			background-color:#B8860B;
+			padding:15px 50px;
+			font-size:20px;
+			color:white;
+			text-decoration:none;
+			border:none;
+		}
+		
+		.button-outline{
+			background-color:white;
+			padding:15px 50px;
+			text-decoration:none;
+			color:#B8860B;
+			font-size:20px;
+			border:2px solid #B8860B;
+		}
+		
+		.btn{
+			font-size:20px;
+			padding:15px 50px;
+			color:white;
+			border:none;
+		}
+		.primary{
+			background-color:blue;
+		}
+		.secondary{
+			background-color:gray;
+		}
+		.success{
+			background-color:green;
+		}
+		.warning{
+			background-color:#B8860B;
+		}
+		.danger{
+			background-color:red;
+		}
+		
+		.btn-outline{
+			background-color:white;
+			padding:15px 50px;
+			text-decoration:none;
+			color:#B8860B;
+			font-size:20px;
+			
+		}
+		.outline-primary{
+			color:blue;
+			border:2px solid blue;
+		}
+		.outline-secondary{
+			color:gray;
+			border:2px solid gray;
+		}
+		.outline-success{
+			color:green;
+			border:2px solid green;
+		}
+		.outline-warning{
+			color:#B8860B;
+			border:2px solid #B8860B;
+		}
+		.outline-danger{
+			color:red;
+			border:2px solid red;
+		}
+		
+		.outline-primary:hover,
+		.outline-secondary:hover,
+		.outline-success:hover,
+		.outline-warning:hover,
+		.outline-danger:hover{
+			cursor:pointer;
+			box-shadow:7px 7px 15px gray;
+		}
+	</style>
+
+</head>
+<body>
+
+<button>Default Button</button>
+<a href="#" class="button">Link</a>
+<button class="button">Button</button>
+<input class="button" type="button" value="Input">
+
+
+<hr>
+<button>Default Button</button>
+<a href="#" class="button-outline">Link</a>
+<button class="button-outline">Button</button>
+<input class="button-outline" type="button" value="Input">
+
+<hr>
+
+<button>Default Button</button>
+<button class="btn primary">Primary</button>
+<button class="btn secondary">Secondary</button>
+<button class="btn success">Success</button>
+<button class="btn warning">Warning</button>
+<button class="btn danger">Danger</button>
+
+
+<hr>
+
+<button>Default Button</button>
+<button class="btn-outline outline-primary">Primary</button>
+<button class="btn-outline outline-secondary">Secondary</button>
+<button class="btn-outline outline-success">Success</button>
+<button class="btn-outline outline-warning">Warning</button>
+<button class="btn-outline outline-danger">Danger</button>
+
+
+
+</body>
+</html>

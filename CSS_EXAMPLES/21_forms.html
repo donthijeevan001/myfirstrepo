@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+	<style>
+		body{
+			background-image: url("/home/jeevan/Downloads/9dc24b-Grand Theft Auto V 11.08.2017 - 00.19.40.07 copy.jpg");
+		}
+		.main_div{
+			background-image: url("/home/jeevan/Downloads/waterfall.gif");
+			border:2px solid red;
+			width:300px;
+			height:350px;
+			text-align:center;
+		}
+		h2{		
+			font-size:30px;
+		}
+		input[type='text'],input[type='password']{
+			height:40px;
+			width:200px;
+			border:2px solid red;
+			margin:5px;
+			font-size:20px;
+			border-radius:20px;
+			text-align:center;
+		}
+		input[type='text']:focus,input[type='password']:focus,input[type='submit']:focus{
+			outline:none;
+		}
+		input[type='submit']{
+			height:40px;
+			width:100px;
+			font-size:25px;
+			color:white;
+			border:none;
+			border-radius:20px;
+			margin:2px 0px 15px 0px;
+			background-color:blue;
+		}
+		input[type='submit']:hover{
+			background-color:darkblue;
+			cursor:pointer;
+			box-shadow:7px 7px 17px green;
+		}
+	</style>
+
+</head>
+<body>
+	
+	<div class="main_div">
+		<h2>Login Hear</h2>
+			<forms>
+				<input type="text" placeholder="Eanter Name">
+				<br>
+				<input type="password" placeholder="Password">
+				<br>
+				<input type="submit" value="Login">
+				
+			</forms>
+	</div>
+
+</body>
+</html>

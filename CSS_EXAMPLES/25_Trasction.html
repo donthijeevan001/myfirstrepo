@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3 Transitions</title>
+	
+	<style>
+		div{
+			height:100px;
+			width:100px;
+			background-color:purple;
+		}
+		
+		#t_width{
+			transition: width 2s;
+		}
+		#t_width:hover{
+			width:300px;
+		}
+		
+		#t_height{ 
+			transition:height 3s;
+		}
+		#t_height:hover{
+			height:200px;
+		}
+		   
+		#t_both{
+			transition:all 2s;
+		}
+		#t_both:hover{
+			height:200px;
+			width:200px;
+		}
+		
+		#t_rotate{
+			transition:all 2s;
+		}
+		#t_rotate:hover{
+			 transform: rotate(180deg);
+			 width:200px;
+		}
+		
+		#t_timing{
+			transition:width 1s;
+			transition-timing-function:ease-in-out;
+			transition-delay:1s;
+		}
+		#t_timing:hover{
+			width:200px;
+		}		
+		
+		#t_zoom{
+			width:500px;
+			height:auto;
+			margin-bottom:50px;
+			overflow:hidden;
+			background-color:white;
+			border-radius:10px;
+		}
+		#t_zoom img{
+			width: 100%;
+			height: auto;
+			border-radius:10px;
+			transition:all 2s;
+			transition-timing-function:linear;
+		}
+		#t_zoom:hover img{
+			transform:scale(1.4,1.4);
+			cursor:pointer;
+		}		
+	</style>
+
+</head>
+<body>
+
+			<p>TransitionsWidth</p>
+			<div id="t_width">
+
+			</div>
+
+			<p>Transitions height</p>
+			<div id="t_height">
+
+			</div>
+
+			<p>Transitions t_both</p>
+			<div id="t_both">
+
+			</div>
+
+			<p>Rotate</p>
+			<div id="t_rotate">
+
+			</div>
+
+
+			<p>Timing</p>
+			<div id="t_timing">
+
+			</div>
+
+			<p>Zoom</p>
+			<div id="t_zoom">
+			  <img src="/games/UI_Development/HTML/CSS3_Development-master/CSS_Starter_Template/img/gallery2.jpeg">
+			</div>
+
+
+
+</body>
+</html>

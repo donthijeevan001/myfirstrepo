@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Animation</title>
+	
+	<style>
+		.simple{
+			background-color:#8A2BE2;
+			height:150px;
+			width:150px;
+			animation-name:simple;
+			animation-duration:2s;
+			animation-timing-function:linear;
+			animation-iteration-count: infinite;
+		}
+		@keyframes simple{
+			from{
+				background-color:#8A2BE2;
+			}to{
+				background-color:#8B0000;
+			}			
+		}
+		
+		.percentage{
+			background-color:#00FF7F;
+			width:150px;
+			height:150px;
+			animation-name:percentage;
+			animation-duration:2s;
+			animation-iteration-count:infinite;
+			animation-timing-function:linear;
+		}
+		@keyframes percentage{
+			0%{
+				background-color:	#4682B4;
+			}
+			25%{
+				background-color:	#40E0D0;
+			}
+			50%{
+				background-color:	#006400;
+			}
+			75%{
+				background-color:	#8B0000;
+			}
+			100%{
+				background-color:	#D2691E;
+			}
+		}
+		
+		.news{
+			background-color:red;
+			font-size:20px;
+			color:white;
+			padding:1px;
+			animation-name:news;
+			animation-duration:3s;
+			animation-iteration-count:infinite;
+			animation-timing-function:linear;
+		}
+		@keyframes news{
+			0%{
+				background-color:	#FF1493;
+			}
+			25%{
+				background-color:#4B0082;
+			}
+			50%{
+				background-color:#FF0000;
+			}
+			75%{
+				background-color:#FFA500;
+			}
+			100%{
+				background-color:#7FFF00;
+			}
+		}
+		.news p{
+            animation-name: flash-news;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes flash-news {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-80%);
+            }
+        }
+		.animate{
+			background-color:#696969;
+			height:100px;
+			width:100px;
+			margin-bottom:250px;
+			animation-name:animate;
+			animation-duration:5s;
+			animation-iteration-count:infinite;
+			animation-timing-function:linear;
+			position:relative;
+		}
+		@keyframes animate{
+			0%{
+				background-color:red;
+				top:0px;
+				left:0px;
+				box-shadow:7px 7px 15px blue;
+				transform:rotate(90deg);
+				border-radius:10px;
+			}
+			25%{
+				background-color:purple;
+				top:0px;
+				left:2000px
+				box-shadow:7px 7px 15px orange;
+				transform:rotate(180deg);
+				border-radius:20px;
+			}
+			50%{
+				background-color:green;
+				top:200px;
+				left:200px;
+				box-shadow:7px 7px 15px gray;
+				transform:rotate(270deg);
+				border-radius:30px;
+				
+			}
+			75%{
+				background-color:orange;
+				top:200px;
+				left:0px;
+				box-shadow:7px 7px 15px purple;
+				transform:rotate(360deg);
+				border-radius:40px;
+			}
+			100%{
+				background-color:blue;
+				top:0px;
+				left:0px;
+				box-shadow:7px 7px 15px red;
+				transform:rotate(450deg);
+				border-radius:50px;
+			}
+		}
+		
+		.ball{
+			margin-bottom: 250px;
+            width: 85px;
+            height: 85px;
+            background-image: url("/games/UI_Development/HTML/CSS3_Development-master/CSS_Starter_Template/img/ball-clip-art.jpg");
+            position: relative; /* mandatory */
+            animation-name: ball;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;.
+		}
+		@keyframes ball {
+            0%,100%{
+                top:0;
+                left: 0;
+                transform: rotate(90deg);
+            }
+            10%,90%{
+                top:200px;
+                left: 200px;
+                transform: rotate(180deg);
+            }
+            20%,80%{
+                top:0;
+                left: 400px;
+                transform: rotate(270deg);
+            }
+            30%,70%{
+                top:200px;
+                left: 600px;
+                transform: rotate(360deg);
+            }
+            40%,60%{
+                top:0;
+                left: 800px;
+                transform: rotate(450deg);
+            }
+            50%{
+                top:200px;
+                left: 1000px;
+                transform: rotate(0deg);
+            }
+        }
+	</style>
+
+</head>
+<body>
+
+    <h3>Simple Animation</h3>
+    <div class="simple">
+
+    </div>
+
+    <br><br><hr>
+
+    <h3>percentages animation</h3>
+    <div class="percentage">
+
+    </div>
+
+    <br><br><hr>
+
+
+
+    <h3>News</h3>
+    <div class="news">
+        <p>Latest News: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptatibus?</p>
+    </div>
+
+    <br><br><hr>
+	
+	<h3>Animation</h3>
+    <div class="animate">
+
+    </div>
+	
+	  <hr>
+      <br>
+    <h3>Foot ball</h3>
+    <div class="ball">
+
+    </div>
+	
+    
+    <br><br><hr>
+
+</body>
+</html>

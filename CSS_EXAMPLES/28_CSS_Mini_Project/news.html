@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UiBrains Techno Portal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+	<style>
+		/* ------- Main Header ------- */
+		body{
+    			font-family: Arial, sans-serif;
+    			margin: 0;
+		}
+		.main-header{
+			background-image:url("images/technology.JPG");
+			padding:15px;
+			color:white;
+			text-align:right;
+		}
+		.main-nav{
+			background-color:black;
+			overflow:hidden;
+		}
+		.main-nav ul{
+			list-style-type:none;
+			padding:0px;
+			margin:0px;
+		}
+		.main-nav ul li {
+			float:left;
+		}
+		.main-nav ul li a{
+			text-decoration: none;
+			padding:12px 25px;
+			color:white;
+			display:inline-block;
+		}
+		.main-nav ul li a:hover{
+			background-color:orange;
+			cursor:pointer;			
+		}
+		.main-nav ul li a.active{
+   			 background-color: #6CC95E;
+		}
+
+		/*Flash News*/
+		.flash-news{
+			background-color:lightgreen;
+			font-size:20px;
+			margin-top:5px;
+			color:white;
+			padding:1px;
+			animation-name:flash-news;
+			animation-duration:2s;
+			animation-iteration-count: infinite;
+    			animation-timing-function: linear;
+		}
+		@keyframes flash-news{
+			0%{
+				background-color:red;
+			}
+			50%{
+				background-color:blue;
+			}
+			100%{
+				background-color:purple;
+			}
+		}
+		.flash-news p{
+			animation-name:paragraph;
+			animation-duration:10s;
+			animation-iteration-count: infinite;
+    			animation-timing-function: linear;		
+		}
+		@keyframes paragraph{
+			0%{
+				transform: translateX(100%);
+			}	
+			100%{
+				transform: translateX(-80%);
+			}	
+		}
+
+		/*Home News Sections */
+		.home-news-section{
+			width:1100px;
+			height:auto;
+			margin-left:150px;
+		}
+		.home-article{
+			width:350px;
+			height:500px;
+			border:2px solid green;
+			float:left;
+			margin:5px;
+			text-align:center;
+			transition: all 2s;
+		}
+		.home-article img{
+			width:100%;			
+		}
+		.home-news-text{
+			padding:10px;
+		}
+		.home-article:hover{
+			box-shadow:7px 7px 17px gray;
+			width:350px;
+			cursor:pointer;		
+		}
+		.break{
+			clear:both;
+		}
+		/* Main Footer */
+		.main-footer{
+			background-color:#5F9EA0;
+			text-align:center;
+			padding:15px;
+			color:white;
+		}
+		/* news section*/
+		.section_news{
+			width : 1100px;
+			height: auto;
+			margin : auto;		
+		}
+		.article_img h2{
+			background-color:black;
+			color:white;
+			text-align:center;
+			padding :10px;
+			border-radius:20px;
+		}
+		.zoom{
+			width:600px;
+			margin:auto;
+			overflow:hidden;		
+		}
+		.zoom img{
+			width:100%;
+			height:100%;
+			transition: all 2s;
+			opacity: 0.8;
+		}
+		.zoom:hover img{
+			transform: scale(1.2,1.2);
+			opacity: 1.0;		
+		}
+	</style>
+</head>
+<body>
+	<!-- Main Header -->
+   	 <header class="main-header">
+        	<h1>UiBrains Techno Portal</h1>
+   	 </header>
+	<!-- Main Navigation -->
+	<nav class="main-nav">
+		<ul>
+			<li>	
+				<a href="#">
+				 <i class="fa fa-home"></i>Home</a>
+			</li>
+			<li>	
+				<a href="#">
+				<i class="fa fa-newspaper-o"></i>News</a>
+			</li>
+			<li>	
+				<a href="#">
+				<i class="fa fa-image"></i>Gallery</a>
+			</li>
+			<li>	
+				<a href="#">
+				<i class="fa fa-id-card"></i>About US</a>
+			</li>
+			<li>	
+				<a href="#">
+				<i class="fa fa-envelope"></i> Contact</a>
+			</li>
+			
+		</ul>
+	</nav>	
+
+			<!-- news home section -->
+		<section class="section_news">
+					<article class="article_img">
+					<h2>Google Pixel 3 Released in May,2018</h2>
+					<div class="zoom">
+						<img src="images/gallery_mobile_1.jpg">
+					</div>	
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae cumque est explicabo illo laboriosam minima necessitatibus nemo nobis obcaecati praesentium, quaerat quis quos rerum, totam veniam voluptatibus. Beatae consequuntur distinctio dolor dolorem, dolorum eum natus reiciendis sequi vel voluptatibus!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae cumque est explicabo illo laboriosam minima necessitatibus nemo nobis obcaecati praesentium, quaerat quis quos rerum, totam veniam voluptatibus. Beatae consequuntur distinctio dolor dolorem, dolorum eum natus reiciendis sequi vel voluptatibus!</p>		
+				</airtcle>
+		<article class="article_img">
+			<h2>Google Pixel 3 Released in May,2018</h2>
+			<div class="zoom">
+				<img src="images/gallery_tablet_3.jpg">
+			</div>	
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae cumque est explicabo illo laboriosam minima necessitatibus nemo nobis obcaecati praesentium, quaerat quis quos rerum, totam veniam voluptatibus. Beatae consequuntur distinctio dolor dolorem, dolorum eum natus reiciendis sequi vel voluptatibus!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae cumque est explicabo illo laboriosam minima necessitatibus nemo nobis obcaecati praesentium, quaerat quis quos rerum, totam veniam voluptatibus. Beatae consequuntur distinctio dolor dolorem, dolorum eum natus reiciendis sequi vel voluptatibus!</p>		
+		</airtcle>		
+		
+		<article class="article_img">
+			<h2>Google Pixel 3 Released in May,2018</h2>
+			<div class="zoom">
+				<img src="images/gallery_tablet_4.jpg">
+			</div>	
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae cumque est explicabo illo laboriosam minima necessitatibus nemo nobis obcaecati praesentium, quaerat quis quos rerum, totam veniam voluptatibus. Beatae consequuntur distinctio dolor dolorem, dolorum eum natus reiciendis sequi vel voluptatibus!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae cumque est explicabo illo laboriosam minima necessitatibus nemo nobis obcaecati praesentium, quaerat quis quos rerum, totam veniam voluptatibus. Beatae consequuntur distinctio dolor dolorem, dolorum eum natus reiciendis sequi vel voluptatibus!</p>		
+		</airtcle>		
+
+		<article class="article_img">
+			<h2>Google Pixel 3 Released in May,2018</h2>
+			<div class="zoom">
+				<img src="images/article_mobile.jpg">
+			</div>	
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae cumque est explicabo illo laboriosam minima necessitatibus nemo nobis obcaecati praesentium, quaerat quis quos rerum, totam veniam voluptatibus. Beatae consequuntur distinctio dolor dolorem, dolorum eum natus reiciendis sequi vel voluptatibus!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae cumque est explicabo illo laboriosam minima necessitatibus nemo nobis obcaecati praesentium, quaerat quis quos rerum, totam veniam voluptatibus. Beatae consequuntur distinctio dolor dolorem, dolorum eum natus reiciendis sequi vel voluptatibus!</p>		
+		</airtcle>		
+
+		<article class="article_img">
+			<h2>Google Pixel 3 Released in May,2018</h2>
+			<div class="zoom">
+				<img src="images/article_tablet.jpg">
+			</div>	
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae cumque est explicabo illo laboriosam minima necessitatibus nemo nobis obcaecati praesentium, quaerat quis quos rerum, totam veniam voluptatibus. Beatae consequuntur distinctio dolor dolorem, dolorum eum natus reiciendis sequi vel voluptatibus!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae cumque est explicabo illo laboriosam minima necessitatibus nemo nobis obcaecati praesentium, quaerat quis quos rerum, totam veniam voluptatibus. Beatae consequuntur distinctio dolor dolorem, dolorum eum natus reiciendis sequi vel voluptatibus!</p>		
+		</airtcle>		
+	
+
+		</section>
+		 <!-- Break -->
+    			<div class="break"></div>
+
+	
+	 <!-- Main Footer -->
+	<footer class="main-footer">
+		<h2>Copyright &copy; 2018 , UiBrains Techno Portal</h2>
+		<p>All Rightes Reserved</p>
+		<small>Developed & Maintained by
+           		 <a href="" target="_blank">
+               			<i class="fa fa-user-circle-o"></i> JeevanKumar Donthi
+           		 </a>
+      	       </small>
+	</footer>		
+
+
+		
+
+</body>
+</html>
+
